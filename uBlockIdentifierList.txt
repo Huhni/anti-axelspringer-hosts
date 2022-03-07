@@ -1,3 +1,11 @@
+! Title: Axel Springer Link Identifier
+! Expires: 30 days
+! Version: 20220211
+! Description: Ergänzt Links zu Axel Springer Seiten mit " (Achtung: Springerpresse)"
+! GitHub issues: https://github.com/Huhni/anti-axelspringer-hosts/issues
+! GitHub pull requests: https://github.com/Huhni/anti-axelspringer-hosts/pulls
+
+!#if cap_user_stylesheet
 *##a[href*="//agdlab.pl"]:after:style(content: " (Achtung: Springerpresse)" !important; color: #E6000D !important; clear: both;)
 *##a[href*="//www.agdlab.pl"]:after:style(content: " (Achtung: Springerpresse)" !important; color: #E6000D !important; clear: both;)
 *##a[href*="//amiado.com"]:after:style(content: " (Achtung: Springerpresse)" !important; color: #E6000D !important; clear: both;)
@@ -379,3 +387,4 @@
 *##a[href*="//flug.idealo.de"]:after:style(content: " (Achtung: Springerpresse)" !important; color: #E6000D !important; clear: both;)
 *##a[href*="//springer02.webtrekk.net"]:after:style(content: " (Achtung: Springerpresse)" !important; color: #E6000D !important; clear: both;)
 *##a[href*="//v.computerbild.de.dns.boreus.de"]:after:style(content: " (Achtung: Springerpresse)" !important; color: #E6000D !important; clear: both;)
+!#endif
